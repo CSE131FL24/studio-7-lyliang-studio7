@@ -10,6 +10,12 @@ public class Rectangle {
 		this.width=width;
 	}
 	
+	public String toString() {
+		String stringName="Length="+this.length+"\nWidth="+this.width;
+		return stringName;
+		
+	}
+	
 	public double calculateArea() {
 		double area = length*width;
 		return area;
@@ -43,6 +49,7 @@ public class Rectangle {
 		rectangle1.calculateArea();
 		rectangle2.isBiggerThan(rectangle1.calculateArea());
 		rectangle1.drawRectangle();
+		System.out.println(rectangle1);
 	}
 		
 }
